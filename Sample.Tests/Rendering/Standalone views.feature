@@ -2,7 +2,6 @@
 	In order to test a simple view
 	I want to render a view instance as HTML with one method call
 
-@mytag
 Scenario: Render simple view
 	Given I have an instance of a simple view
 	When I use the RenderAsHtml extension

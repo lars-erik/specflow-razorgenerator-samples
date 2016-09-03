@@ -5,13 +5,16 @@ and [Behavior Driven Development](https://en.wikipedia.org/wiki/Behavior-driven_
 Views are rendered to [HtmlAgilityPack](https://htmlagilitypack.codeplex.com/) documents
 using [RazorGenerator](https://github.com/RazorGenerator/RazorGenerator). 
 The latter is currently using [my fork](https://github.com/lars-erik/RazorGenerator) to be available to render views from views.
-Documentation is finally generated using Nunit.MsBuild and Pickle.
+Documentation is finally generated using [Nunit.ConsoleRunner](https://github.com/nunit/docs/wiki/Console-Runner)
+and [Pickles.MsBuild](https://github.com/picklesdoc/pickles).
 
-The executable specifications for this project can be viewed [here](). 
+The executable specifications for this project can be viewed [here]().  
+Note to BDD purists: The only persona for _this_ project is developers, and stories are written as such. ;)
 
 ### Classes of note
 
-These are found under Sample.Tests/[Feature]/Shared
+The step bindings are located under Sample.Tests/[Feature]/Steps. 
+Classes you'd copy are found under Sample.Tests/[Feature]/Shared, and are used as follows:
 
 - `ViewsUnderTest`  
   - Is injected into step bindings 
@@ -31,3 +34,5 @@ These are found under Sample.Tests/[Feature]/Shared
   - Sets `ControllersUnderTestFactory` as `ControllerBuilder`'s factory in `[BeforeScenario(Order=0)]`
 - `ControllersUnderTestFactory`
   - Registry of controller factory methods for current scenario
+
+

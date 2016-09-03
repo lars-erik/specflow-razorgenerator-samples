@@ -66,20 +66,18 @@ namespace Sample.Tests.Rendering
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Render view with partial")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
         public virtual void RenderViewWithPartial()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Render view with partial", new string[] {
-                        "mytag"});
-#line 6
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Render view with partial", ((string[])(null)));
+#line 5
 this.ScenarioSetup(scenarioInfo);
-#line 7
+#line 6
  testRunner.Given("I have an instance of a view with a partial", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 8
+#line 7
     testRunner.And("I have registered the partial with ViewsUnderTest", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 9
+#line 8
  testRunner.When("I use the RenderAsHtml extension", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 10
+#line 9
  testRunner.Then("the result should be a HtmlDocument containing HTML from the partial", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

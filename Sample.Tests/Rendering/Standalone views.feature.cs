@@ -66,18 +66,16 @@ namespace Sample.Tests.Rendering
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Render simple view")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
         public virtual void RenderSimpleView()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Render simple view", new string[] {
-                        "mytag"});
-#line 6
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Render simple view", ((string[])(null)));
+#line 5
 this.ScenarioSetup(scenarioInfo);
-#line 7
+#line 6
  testRunner.Given("I have an instance of a simple view", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 8
+#line 7
  testRunner.When("I use the RenderAsHtml extension", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 9
+#line 8
  testRunner.Then("the result should be a HTML document", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
