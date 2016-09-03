@@ -112,7 +112,7 @@
     </Compile>
     <Compile Include="Calling Controllers\Steps\CallingControllersFromViewsSteps.cs" />
     <Compile Include="Calling Controllers\Shared\ControllersUnderTest.cs" />
-    <Compile Include="Calling Controllers\Shared\ControllersUnderTestBindings.cs" />
+    <Compile Include="Calling Controllers\Shared\ControllersUnderTestSteps.cs" />
     <Compile Include="Calling Controllers\Shared\ControllersUnderTestFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rendering\Shared\ViewsUnderTestViewEngine.cs" />

@@ -4,11 +4,11 @@ using TechTalk.SpecFlow;
 namespace Sample.Tests.Calling_Controllers.Shared
 {
     [Binding]
-    public class ControllersUnderTestBindings
+    public class ControllersUnderTestSteps
     {
         private readonly ControllersUnderTest controllersUnderTest;
 
-        public ControllersUnderTestBindings(ControllersUnderTest controllersUnderTest)
+        public ControllersUnderTestSteps(ControllersUnderTest controllersUnderTest)
         {
             this.controllersUnderTest = controllersUnderTest;
         }
