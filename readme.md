@@ -8,7 +8,7 @@ The latter is currently using [my fork](https://github.com/lars-erik/RazorGenera
 Documentation is finally generated using [Nunit.ConsoleRunner](https://github.com/nunit/docs/wiki/Console-Runner)
 and [Pickles.MsBuild](https://github.com/picklesdoc/pickles).
 
-The executable specifications for this project can be viewed [here]().  
+The executable specifications for this project can be viewed [here](https://lars-erik.github.io/specflow-razorgenerator-samples/Docs/Index.html).  
 Note to BDD purists: The only persona for _this_ project is developers, and stories are written as such. ;)
 
 ### Classes of note
