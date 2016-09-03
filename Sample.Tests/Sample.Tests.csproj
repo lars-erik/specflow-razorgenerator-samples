@@ -105,6 +105,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
+    <Compile Include="Calling Controllers\Calling controllers from views.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Calling controllers from views.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Calling Controllers\Steps\CallingControllersFromViewsSteps.cs" />
+    <Compile Include="Calling Controllers\Shared\ControllersUnderTest.cs" />
+    <Compile Include="Calling Controllers\Shared\ControllersUnderTestBindings.cs" />
+    <Compile Include="Calling Controllers\Shared\ControllersUnderTestFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rendering\Shared\ViewsUnderTestViewEngine.cs" />
     <Compile Include="Rendering\Shared\ViewsUnderTest.cs" />
@@ -122,14 +131,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>View with model.feature</DependentUpon>
     </Compile>
-    <Compile Include="Rendering\View with partial.feature.cs">
+    <Compile Include="Rendering\Views with partials.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>View with partial.feature</DependentUpon>
+      <DependentUpon>Views with partials.feature</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Calling Controllers\Calling controllers from views.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Calling controllers from views.feature.cs</LastGenOutput>
+    </None>
     <None Include="packages.config" />
     <None Include="Rendering\Standalone views.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
@@ -139,9 +152,9 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>View with model.feature.cs</LastGenOutput>
     </None>
-    <None Include="Rendering\View with partial.feature">
+    <None Include="Rendering\Views with partials.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>View with partial.feature.cs</LastGenOutput>
+      <LastGenOutput>Views with partials.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>

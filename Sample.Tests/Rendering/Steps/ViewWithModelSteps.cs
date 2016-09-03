@@ -21,7 +21,7 @@ namespace Sample.Tests.Rendering.Steps
         [Given(@"I have a view and a model")]
         public void GivenIHaveAViewAndAModel()
         {
-            viewsUnderTest.Instance = new _Views_ViewWithModel_cshtml();
+            viewsUnderTest.Instance = new _Views_Simple_ViewWithModel_cshtml();
         }
 
         [When(@"I use the RenderAsHtml extension with the model")]

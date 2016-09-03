@@ -6,6 +6,7 @@ using TechTalk.SpecFlow;
 namespace Sample.Tests.Rendering.Steps
 {
     [Binding]
+    [Scope(Feature="Views with partials")]
     public class ViewWithPartialSteps
     {
         private readonly ViewsUnderTest viewsUnderTest;
@@ -15,16 +16,16 @@ namespace Sample.Tests.Rendering.Steps
             this.viewsUnderTest = viewsUnderTest;
         }
 
-        [BeforeScenario(Order = 1)]
-        public void BeforeScenario()
+        [Given(@"I have registered the partial with ViewsUnderTest")]
+        public void GivenIHaveRegisteredThePartialWithViewsUnderTest()
         {
-            viewsUnderTest.AddPartial<_Views_Partials_SimplePartial_cshtml>("~/Views/Partials/SimplePartial.cshtml");
+            viewsUnderTest.AddPartial<_Views_Shared_SimplePartial_cshtml>("~/Views/Partials/SimplePartial.cshtml");
         }
 
         [Given(@"I have an instance of a view with a partial")]
         public void GivenIHaveAnInstanceOfAViewWithAPartial()
         {
-            viewsUnderTest.Instance = new _Views_SimpleViewWithPartial_cshtml();
+            viewsUnderTest.Instance = new _Views_Simple_SimpleViewWithPartial_cshtml();
         }
 
         [Then(@"the result should be a HtmlDocument containing HTML from the partial")]

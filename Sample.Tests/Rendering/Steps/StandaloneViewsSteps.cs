@@ -20,7 +20,7 @@ namespace Sample.Tests.Rendering.Steps
         [Given(@"I have an instance of a simple view")]
         public void GivenIHaveAnInstanceOfASimpleView()
         {
-            viewsUnderTest.Instance = new _Views_SimpleView_cshtml();
+            viewsUnderTest.Instance = new _Views_Simple_SimpleView_cshtml();
         }
 
         [Then(@"the result should be a HTML document")]

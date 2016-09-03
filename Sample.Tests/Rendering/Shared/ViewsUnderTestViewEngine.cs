@@ -8,29 +8,29 @@ namespace Sample.Tests.Rendering.Shared
 {
     public class ViewsUnderTestViewEngine : IViewEngine
     {
-        readonly Dictionary<string, Type> partials = new Dictionary<string, Type>();
-        readonly Dictionary<string, Type> views = new Dictionary<string, Type>();
+        readonly Dictionary<string, Type> partialTypes = new Dictionary<string, Type>();
+        readonly Dictionary<string, Type> viewTypes = new Dictionary<string, Type>();
 
         public ViewEngineResult FindPartialView(ControllerContext controllerContext, string partialViewName, bool useCache)
         {
-            var key = partials.Keys.FirstOrDefault(k => partialViewName.Contains(k) || k.Contains(partialViewName));
+            var key = partialTypes.Keys.FirstOrDefault(k => partialViewName.Contains(k) || k.Contains(partialViewName));
             if (key != null)
             {
-                var view = new PrecompiledMvcView(partialViewName, partials[key], false, new string[0]);
+                var view = new PrecompiledMvcView(partialViewName, partialTypes[key], false, new string[0]);
                 return new ViewEngineResult(view, this);
             }
-            return null;
+            return new ViewEngineResult(new string[0]);
         }
 
         public ViewEngineResult FindView(ControllerContext controllerContext, string viewName, string masterName, bool useCache)
         {
-            var key = views.Keys.FirstOrDefault(k => viewName.Contains(k) || k.Contains(viewName));
+            var key = viewTypes.Keys.FirstOrDefault(k => viewName.Contains(k) || k.Contains(viewName));
             if (key != null)
             {
-                var view = new PrecompiledMvcView(viewName, views[key], false, new string[0]);
+                var view = new PrecompiledMvcView(viewName, viewTypes[key], false, new string[0]);
                 return new ViewEngineResult(view, this);
             }
-            return null;
+            return new ViewEngineResult(new string[0]);
         }
 
         public void ReleaseView(ControllerContext controllerContext, IView view)
@@ -39,12 +39,12 @@ namespace Sample.Tests.Rendering.Shared
 
         public void AddPartial<TPartial>(string path)
         {
-            partials.Add(path, typeof(TPartial));
+            partialTypes.Add(path, typeof(TPartial));
         }
 
         public void Add<TView>(string path)
         {
-            views.Add(path, typeof(TView));
+            viewTypes.Add(path, typeof(TView));
         }
     }
 }

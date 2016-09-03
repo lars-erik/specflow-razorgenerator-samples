@@ -24,7 +24,7 @@ namespace Sample.Tests.Rendering
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "View with partial.feature"
+#line 1 "Views with partials.feature"
 #line hidden
         
         [NUnit.Framework.TestFixtureSetUpAttribute()]
@@ -76,8 +76,10 @@ this.ScenarioSetup(scenarioInfo);
 #line 7
  testRunner.Given("I have an instance of a view with a partial", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 8
- testRunner.When("I use the RenderAsHtml extension", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+    testRunner.And("I have registered the partial with ViewsUnderTest", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 9
+ testRunner.When("I use the RenderAsHtml extension", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 10
  testRunner.Then("the result should be a HtmlDocument containing HTML from the partial", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

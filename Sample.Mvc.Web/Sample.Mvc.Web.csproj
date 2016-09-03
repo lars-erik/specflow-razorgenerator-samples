@@ -103,19 +103,23 @@
   <ItemGroup>
     <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\SimpleController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ControlledPartialModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
-    <Content Include="Views\SimpleView.cshtml" />
+    <Content Include="Views\Simple\SimpleView.cshtml" />
     <Content Include="Properties\RazorGenerator\RazorGenerator.properties" />
-    <Content Include="Views\Partials\SimplePartial.cshtml" />
-    <Content Include="Views\SimpleViewWithPartial.cshtml" />
-    <Content Include="Views\ViewWithModel.cshtml" />
+    <Content Include="Views\Shared\SimplePartial.cshtml" />
+    <Content Include="Views\Simple\SimpleViewWithPartial.cshtml" />
+    <Content Include="Views\Simple\ViewWithModel.cshtml" />
+    <Content Include="Views\Simple\ControlledViewWithPartial.cshtml" />
+    <Content Include="Views\Shared\ControlledPartial.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -125,8 +129,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,7 +1,9 @@
 ﻿using System.IO;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Routing;
 using RazorGenerator.Testing;
+using Sample.Mvc.Web;
 using TechTalk.SpecFlow;
 
 namespace Sample.Tests.Rendering.Shared
@@ -19,7 +21,10 @@ namespace Sample.Tests.Rendering.Shared
         [BeforeScenario]
         public void BeforeScenario()
         {
-            HttpContext.Current = new HttpContext(new HttpRequest("", "http://localhost", ""), new HttpResponse(new StringWriter()));
+            //HttpContext.Current = new HttpContext(new HttpRequest("", "http://localhost", ""), new HttpResponse(new StringWriter()));
+
+            RouteTable.Routes.Clear();
+            RouteConfig.RegisterRoutes(RouteTable.Routes);
 
             ViewEngines.Engines.Clear();
             ViewEngines.Engines.Add(viewsUnderTest.ViewEngine);
