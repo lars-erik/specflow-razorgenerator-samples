@@ -9,8 +9,7 @@ using Moq;
 using NUnit.Framework;
 using RazorGenerator.Testing;
 using Sample.Mvc.Web.Controllers;
-using Sample.Tests.Calling_Controllers.Shared;
-using Sample.Tests.Rendering.Shared;
+using Sample.Tests.MvcBindings;
 using TechTalk.SpecFlow;
 
 namespace Sample.Tests.Calling_Controllers.Steps

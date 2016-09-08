@@ -2,7 +2,7 @@
 using HtmlAgilityPack;
 using NUnit.Framework;
 using RazorGenerator.Testing;
-using Sample.Tests.Rendering.Shared;
+using Sample.Tests.MvcBindings;
 using TechTalk.SpecFlow;
 
 namespace Sample.Tests.Rendering.Steps

@@ -4,7 +4,7 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using System.Web.SessionState;
 
-namespace Sample.Tests.Calling_Controllers.Shared
+namespace Sample.Tests.MvcBindings
 {
     public class ControllersUnderTestFactory : IControllerFactory
     {

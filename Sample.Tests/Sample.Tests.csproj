@@ -113,13 +113,13 @@
       <DependentUpon>Calling controllers from views.feature</DependentUpon>
     </Compile>
     <Compile Include="Calling Controllers\Steps\CallingControllersFromViewsSteps.cs" />
-    <Compile Include="Calling Controllers\Shared\ControllersUnderTest.cs" />
-    <Compile Include="Calling Controllers\Shared\ControllersUnderTestSteps.cs" />
-    <Compile Include="Calling Controllers\Shared\ControllersUnderTestFactory.cs" />
+    <Compile Include="MvcBindings\ControllersUnderTest.cs" />
+    <Compile Include="MvcBindings\ControllersUnderTestSteps.cs" />
+    <Compile Include="MvcBindings\ControllersUnderTestFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Rendering\Shared\ViewsUnderTestViewEngine.cs" />
-    <Compile Include="Rendering\Shared\ViewsUnderTest.cs" />
-    <Compile Include="Rendering\Shared\ViewsUnderTestSteps.cs" />
+    <Compile Include="MvcBindings\ViewsUnderTestViewEngine.cs" />
+    <Compile Include="MvcBindings\ViewsUnderTest.cs" />
+    <Compile Include="MvcBindings\ViewsUnderTestSteps.cs" />
     <Compile Include="Rendering\Standalone views.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

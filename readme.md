@@ -14,7 +14,7 @@ Note to BDD purists: The only persona for _this_ project is developers, and stor
 ### Classes of note
 
 The step bindings are located under Sample.Tests/[Feature]/Steps. 
-Classes you'd copy are found under Sample.Tests/[Feature]/Shared, and are used as follows:
+Classes you'd copy are found under Sample.Tests/MvcBindings, and are used as follows:
 
 - `ViewsUnderTest`  
   - Is injected into step bindings 

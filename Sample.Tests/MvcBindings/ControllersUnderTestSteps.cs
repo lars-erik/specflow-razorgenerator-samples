@@ -1,7 +1,7 @@
 using System.Web.Mvc;
 using TechTalk.SpecFlow;
 
-namespace Sample.Tests.Calling_Controllers.Shared
+namespace Sample.Tests.MvcBindings
 {
     [Binding]
     public class ControllersUnderTestSteps

@@ -1,6 +1,6 @@
 ﻿using ASP;
 using NUnit.Framework;
-using Sample.Tests.Rendering.Shared;
+using Sample.Tests.MvcBindings;
 using TechTalk.SpecFlow;
 
 namespace Sample.Tests.Rendering.Steps

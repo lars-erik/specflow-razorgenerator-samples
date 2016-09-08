@@ -1,7 +1,7 @@
 using System;
 using System.Web.Mvc;
 
-namespace Sample.Tests.Calling_Controllers.Shared
+namespace Sample.Tests.MvcBindings
 {
     public class ControllersUnderTest
     {

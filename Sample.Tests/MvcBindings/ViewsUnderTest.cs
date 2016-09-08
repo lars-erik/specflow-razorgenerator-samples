@@ -7,7 +7,7 @@ using HtmlAgilityPack;
 using Moq;
 using RazorGenerator.Testing;
 
-namespace Sample.Tests.Rendering.Shared
+namespace Sample.Tests.MvcBindings
 {
     public class ViewsUnderTest
     {

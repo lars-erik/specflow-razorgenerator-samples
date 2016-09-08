@@ -1,12 +1,10 @@
-﻿using System.IO;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using System.Web.Routing;
 using RazorGenerator.Testing;
 using Sample.Mvc.Web;
 using TechTalk.SpecFlow;
 
-namespace Sample.Tests.Rendering.Shared
+namespace Sample.Tests.MvcBindings
 {
     [Binding]
     public class ViewsUnderTestSteps
